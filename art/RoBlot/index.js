@@ -1,19 +1,19 @@
 const width = 125;
 const height = 125;
 
-const head_width = 90;
-const head_height = 46;
-const eye_radius = 10;
-const robot_width = 22;
-const robot_height = 108;
-const neck_length = 13;
-const neck_width = 9
-const mouth_width = 65;
-const mouth_height = 3;
-const mouth_offset_y = 11;
-const leg_width = 8
-const arm_width = 8
-const arm_dist = 20
+const head_width = bt.randInRange(30, 90);
+const head_height = bt.randInRange(20, 60);
+const eye_radius = bt.randInRange(2, 4);
+const robot_width = bt.randInRange(15, 50);
+const robot_height = bt.randInRange(80, 125);
+const neck_length = bt.randInRange(1, 20);
+const neck_width = bt.randInRange(3, 15);
+const mouth_width = bt.randInRange(30, 90);
+const mouth_height = bt.randInRange(2, 5);
+const mouth_offset_y = bt.randInRange(5, 10);
+const leg_width = bt.randInRange(5, 15);
+const arm_width = bt.randInRange(10, 20);
+const arm_dist = bt.randInRange(1, 30);
 
 setDocDimensions(width, height);
 
