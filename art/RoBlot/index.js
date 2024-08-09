@@ -8,12 +8,14 @@ const robot_width = bt.randInRange(15, 50);
 const robot_height = bt.randInRange(80, 125);
 const neck_length = bt.randInRange(1, 20);
 const neck_width = bt.randInRange(3, 15);
-const mouth_width = bt.randInRange(30, 90);
+const mouth_width = bt.randInRange(30, Math.min(90, head_width));
 const mouth_height = bt.randInRange(2, 5);
 const mouth_offset_y = bt.randInRange(5, 10);
-const leg_width = bt.randInRange(5, 15);
-const arm_width = bt.randInRange(10, 20);
+const leg_width = bt.randInRange(5, Math.min(20, (robot_width/2)));
+const arm_width = bt.randInRange(10, (robot_height / 4 - head_height/4 - neck_length/4));
 const arm_dist = bt.randInRange(1, 30);
+
+const a = 39
 
 setDocDimensions(width, height);
 
